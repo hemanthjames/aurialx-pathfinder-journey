@@ -28,8 +28,16 @@ export const AurialRoadmap = () => {
 
   return (
     <div className="roadmap-container min-h-screen bg-background overflow-hidden">
+      {/* Spline 3D Background */}
+      <div 
+        className="fixed inset-0 z-0 opacity-20 pointer-events-none"
+        dangerouslySetInnerHTML={{
+          __html: '<spline-viewer url="https://prod.spline.design/Dgqe0CFwKpouo4HG/scene.splinecode"></spline-viewer>'
+        }}
+      />
+      
       {/* Hero Section */}
-      <div className="relative h-screen flex items-center justify-center">
+      <div className="relative h-screen flex items-center justify-center z-10">
         <div className="text-center space-y-8 fade-in-up">
           <h1 className="text-7xl font-bold glow-text mb-4">
             Aurial<span className="text-primary">.X</span>
@@ -63,7 +71,7 @@ export const AurialRoadmap = () => {
       <FloatingNavigation onNavigate={scrollToNode} activeNode={activeNode} />
 
       {/* Interactive Roadmap */}
-      <div className="relative" style={{ height: '400vh' }}>
+      <div className="relative z-10" style={{ height: '400vh' }}>
         {/* Central Trunk */}
         <div 
           className="absolute left-1/2 top-0 w-1 bg-gradient-to-b from-foreground via-primary to-foreground"
@@ -151,7 +159,7 @@ export const AurialRoadmap = () => {
       </div>
 
       {/* CTA Section */}
-      <div id="cta-section" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-card">
+      <div id="cta-section" className="relative z-10 min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-card">
         <div className="content-panel max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-5xl font-bold glow-text">Ready to Begin?</h2>
           <p className="text-xl text-muted-foreground">
