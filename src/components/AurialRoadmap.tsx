@@ -137,13 +137,13 @@ export const AurialRoadmap = () => {
         {/* Branch 5: Business Model - Left */}
         <TreeBranch
           start={{ x: '50%', y: '70%' }}
-          end={{ x: '25%', y: '80%' }}
+          end={{ x: '25%', y: '78%' }}
           direction="left"
         />
         <div 
           id="business-model"
           className="absolute"
-          style={{ left: '8%', top: '75%' }}
+          style={{ left: '8%', top: '73%' }}
         >
           <BusinessModelNode />
         </div>
@@ -152,7 +152,7 @@ export const AurialRoadmap = () => {
         <div 
           id="financial-freedom"
           className="absolute"
-          style={{ left: '50%', top: '90%', transform: 'translateX(-50%)' }}
+          style={{ left: '50%', top: '92%', transform: 'translateX(-50%)' }}
         >
           <FinancialFreedomNode onComplete={() => scrollToNode('cta-section')} />
         </div>

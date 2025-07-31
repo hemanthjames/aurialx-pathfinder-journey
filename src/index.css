@@ -61,8 +61,8 @@ All colors MUST be HSL.
     --gradient-dark: linear-gradient(135deg, hsl(var(--background)), hsl(0 0% 5%));
     
     /* Tree Branch Effects */
-    --branch-width: 2px;
-    --node-size: 100px;
+    --branch-width: 3px;
+    --node-size: 120px;
 
     --sidebar-background: 0 0% 98%;
 
@@ -204,10 +204,10 @@ All colors MUST be HSL.
   }
 
   .content-panel {
-    @apply bg-card/90 backdrop-blur-md border border-border rounded-2xl p-8 shadow-2xl;
+    @apply bg-card/90 backdrop-blur-md border-2 border-border rounded-2xl p-8 shadow-2xl;
     transform-style: var(--transform-style);
     transition: var(--transition-smooth);
-    min-width: 320px;
+    min-width: 360px;
   }
 
   .content-panel:hover {
@@ -233,10 +233,11 @@ All colors MUST be HSL.
   }
 
   .feature-capsule {
-    @apply bg-muted/50 border border-border rounded-2xl p-8 text-center;
+    @apply bg-muted/50 border-2 border-border rounded-2xl p-8 text-center;
     transform-style: var(--transform-style);
     transition: var(--transition-smooth);
-    min-height: 200px;
+    min-height: 220px;
+    min-width: 340px;
   }
 
   .feature-capsule:hover {
